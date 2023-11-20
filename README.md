@@ -1,6 +1,6 @@
-# OVERVIEW
+## OVERVIEW
 
-The 'show fabric' command shows you statistics and the status of the uplinks and BGP peerings. 
+The `show fabric` command shows you statistics and the status of the uplinks and BGP peerings. 
 It is programmed to be used for leaf routers in IP fabrics that are based on eBGP (between Spine/Leaf as IGP) and iBGP EVPN. 
 
 ```
@@ -37,15 +37,20 @@ Summary: Fabric Connectivity Report
 
 It requires some inputs to discover your uplinks and BGP peerings. 
 
-# HOW TO GET IT INTO YOUR SR LINUX
+## HOW TO GET IT INTO YOUR SR LINUX
 
 Get this CLI Plugin by simply installing the rpm from the bash of your SR Linux node.
 
 1. Connect to your node and get to the bash:
-```A:leaf1# bash ```
+```
+A:leaf1# bash
+```
 
-2. Download or copy the rpm file into the linux system:
-```[admin@leaf1 ~]$ wget https://github.com/aaakpinar/show-fabric-pack/raw/main/show-fabric-0.1.1.rpm```
+3. Download or copy the rpm file into the linux system:
+
+```
+[admin@leaf1 ~]$ wget https://github.com/aaakpinar/show-fabric-pack/raw/main/show-fabric-0.1.1.rpm
+```
 >Look for the latest release...
 
 3. Check your uplink descriptions and BGP group names and configure the `showfabric.conf` file:
